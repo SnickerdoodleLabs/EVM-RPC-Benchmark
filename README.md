@@ -10,7 +10,7 @@ You can pull a pre-built image from [Docker Hub](https://hub.docker.com/reposito
 docker pull snickerdoodlelabs/benchmark
 ```
 
-Run a benchmark agains your RPC endpoint like this:
+Run a benchmark against your RPC endpoint like this:
 
 ```shell
 docker run --rm --env NUM_REQS=100 --env THREADS=5 --env RPC_URL="https://mainnet.infura.io/v3/${INFURA_API_KEY}" snickerdoodle/benchmark
@@ -19,8 +19,8 @@ docker run --rm --env NUM_REQS=100 --env THREADS=5 --env RPC_URL="https://mainne
 ## Environment Variable Definitions
 
 - `NUM_REQS`: Integer number of requests that should be made against the RPC endpoint
-- `THREADS`: Integer number of concurrent requests that should be made against the RPC enpoint (to simulate multiple users)
-- `RPC_URL`: String indicated the URL for your target RPC endpoint provider. 
+- `THREADS`: Integer number of concurrent requests that should be made against the RPC endpoint (to simulate multiple users)
+- `RPC_URL`: String indicating the URL for your target RPC endpoint provider. 
 
 ## Expected Output
 
