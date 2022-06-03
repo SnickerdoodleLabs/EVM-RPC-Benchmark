@@ -4,7 +4,7 @@
 
 This is a small repository defining a ready-to-go Docker environment for benchmarking EVM-compatible 
 RPC endpoints using [`versus`](https://github.com/INFURA/versus) and [`ethspam`](https://github.com/shazow/ethspam). 
-You can pull a pre-built image from Docker Hub:
+You can pull a pre-built image from [Docker Hub](https://hub.docker.com/repository/docker/snickerdoodlelabs/benchmark):
 
 ```shell
 docker pull snickerdoodlelabs/benchmark
@@ -16,7 +16,7 @@ Run a benchmark agains your RPC endpoint like this:
 docker run --rm --env NUM_REQS=100 --env THREADS=5 --env RPC_URL="https://mainnet.infura.io/v3/${INFURA_API_KEY}" snickerdoodle/benchmark
 ```
 
-## Environmet Variable Definitions
+## Environment Variable Definitions
 
 - `NUM_REQS`: Integer number of requests that should be made against the RPC endpoint
 - `THREADS`: Integer number of concurrent requests that should be made against the RPC enpoint (to simulate multiple users)
